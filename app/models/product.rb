@@ -7,4 +7,6 @@ class Product < ActiveRecord::Base
   	message: 'изображение может быть в форматах jpg, png, gif.'
   }
   validates :title, uniqueness: true
+  validates_length_of :title, :minimum => 10, :too_short => "должно быть больше 10 символов"
+
 end

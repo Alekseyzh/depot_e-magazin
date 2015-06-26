@@ -1,4 +1,6 @@
 ---
+logo.png: logo-605261378f9070e5a7830b44faadee54.png
+logo/index.png: logo-605261378f9070e5a7830b44faadee54.png
 lukey-702.jpg: lukey-702-07e0ea7dfc1c465aee172bdf6070bb86.jpg
 lukey-702/index.jpg: lukey-702-07e0ea7dfc1c465aee172bdf6070bb86.jpg
 lukey-702le.jpg: lukey-702le-01332093ed2efeb8c53b60ee4bd9baba.jpg
@@ -9,9 +11,11 @@ lukey-852dple.jpg: lukey-852dple-316c9019d3459f0625875e1ad16bfcd9.jpg
 lukey-852dple/index.jpg: lukey-852dple-316c9019d3459f0625875e1ad16bfcd9.jpg
 rails.png: rails-71e944d9b39043eba50b77788c0d767f.png
 rails/index.png: rails-71e944d9b39043eba50b77788c0d767f.png
-application.js: application-ec1aef6d8eda79d22aabdd237098eacd.js
-application/index.js: application-ec1aef6d8eda79d22aabdd237098eacd.js
-application.css: application-47cb180f42e195fcc3951832eaeeda0d.css
-application/index.css: application-47cb180f42e195fcc3951832eaeeda0d.css
+ruby.jpg: ruby-86cb2b0a01b99741f7b1a3324af6691b.jpg
+ruby/index.jpg: ruby-86cb2b0a01b99741f7b1a3324af6691b.jpg
+application.js: application-47b44084585f598b722954036f95b1b4.js
+application/index.js: application-47b44084585f598b722954036f95b1b4.js
+application.css: application-81f0fdaf84f78852a1cef57d04017dce.css
+application/index.css: application-81f0fdaf84f78852a1cef57d04017dce.css
 jquery.min.map: jquery.min-c5a89be96c8d2def857e2657b2c155c0.map
 jquery/index.min.map: jquery.min-c5a89be96c8d2def857e2657b2c155c0.map
