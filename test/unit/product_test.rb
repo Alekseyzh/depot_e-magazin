@@ -4,7 +4,7 @@ class ProductTest < ActiveSupport::TestCase
 	fixtures :products
 	test "product is not valid without a unique title" do
 	# если у товара нет уникального названия, то он недопустим
-	product = Product.new( title: products(:ruby).title,
+	product = Product.new( title: products(:one).title,
 		description: "some text",
 		price: 1,
 		image_url: "fred.gif") 
@@ -40,6 +40,7 @@ test "product price must be positive" do
 	product.errors[:price].join('; ')
 	product.price = 1
 	assert product.valid?
+end
 
 def new_product(image_url)
 		Product.new(title: "Новая паяльная станция",
@@ -51,8 +52,8 @@ def new_product(image_url)
 
 test "image_url" do
 	# URL изображения
-	ok = %w{ fred.gif fred.jpg fred.png FRED.GIF FRED.Gif http://a.b.c/x/y/z/fred.jpg }
-	bad = %w{ fred.doc fred.gif/more fred.gif.more}
+	ok = %w{fred.gif fred.jpg fred.png FRED.GIF FRED.Gif http://a.b.c/x/y/z/fred.jpg }
+	bad = %w{fred.doc fred.gif/more fred.gif.more}
 
 	ok.each do |name|
 		assert new_product(name).valid?, "#{name} shouldn't be invalid" 
@@ -61,4 +62,5 @@ test "image_url" do
 	bad.each do |name|
 		assert new_product(name).invalid?, "#{name} shouldn't be valid"
 	end
+end
 end

@@ -3,8 +3,8 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionController::TestCase
   setup do
-    @product = products(:ruby)
-      @update = {title: 'Text',
+    @product = products(:one)
+      @update = {title: 'Text is very long',
         description: 'Lorem Ipsum',
         image_url: 'image.jpg',
         price: 10.44
@@ -15,6 +15,8 @@ class ProductsControllerTest < ActionController::TestCase
     get :index
     assert_response :success
     assert_not_nil assigns(:products)
+    assert_select '.list_actions', 3
+    assert_select '.list_line_odd, .list_line_even', minimum: 3
   end
 
   test "should get new" do
